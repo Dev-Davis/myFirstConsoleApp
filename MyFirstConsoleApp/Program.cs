@@ -7,41 +7,14 @@ namespace MyFirstConsoleApp
     {
         static void Main(string[] args)
         {
-            var myVariable = 456;
-            var myIntVariable = 123;
+            DateTime purchaseDate = DateTime.Now;
 
-            switch (myIntVariable)
-            {
-                case 1:
-                    Console.WriteLine("We'll never hit this code.");
-                    break;
-                case 2:
-                    Console.WriteLine("We'll hit this code.");
-                    break;
-                default:
-                    Console.WriteLine("We'll never hit this code.");
-                    break;
-            }
+            string lastName = "Smith";
 
-            for (var i = 0; i < 5; i++)
-            {
-                Console.WriteLine($"We're on iteration {i}");
-            }
+            var firstName = "Bill";
 
-            List<string> myStrings = new List<string>();
-            myStrings.Add("blerg");
-            myStrings.Add("blarg");
-            myStrings.Insert(1, "blirg");
-            myStrings.Remove("blirg");
-            myStrings.RemoveAt(1);
-
-
-            foreach (var myString in myStrings)
-            {
-                Console.WriteLine(myString);
-            }
-
-            Console.WriteLine(myVariable);5
+            Console.WriteLine($"{firstName}{lastName} visted on {purchaseDate}");
+            Console.ReadLine(); 
         }
     }
 }
