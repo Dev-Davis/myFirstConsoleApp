@@ -7,8 +7,14 @@ namespace MyFirstConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Bangazon!");
-            Console.ReadKey();
+            DateTime purchaseDate = DateTime.Now;
+
+            string lastName = "Smith";
+
+            var firstName = "Bill";
+
+            Console.WriteLine($"{firstName}{lastName} visted on {purchaseDate}");
+            Console.ReadLine(); 
         }
     }
 }
